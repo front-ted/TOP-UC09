@@ -1,0 +1,31 @@
+Página 2
+arredondar tabela e testar
+arrumar painel clicavel, colocar as setas e testar responsividade
+arredondar painel gaitinha e arrumar o layout dele
+Página 3
+a principio não precisa fazer nada, mas igual testar
+Página 4
+falta as imagens de etapas e bg falta a img5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+          <img src="../conteudo/images/04/" class="center-block img-responsive print borda"
+            alt="">
+          <figcaption> <br>
+           
+          </figcaption>
+        </figure>

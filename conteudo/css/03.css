@@ -1,0 +1,147 @@
+html,
+body {
+    background: url('../images/03/bg.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+iframe {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.modal-body {
+    background: url('../images/03/bg_modal.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+
+.container-modal {
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+h2,
+h3 {
+    color: #50D7E2 !important;
+    font-weight: bold;
+}
+
+hh4 {
+    color: #000 !important;
+}
+
+li {
+    margin-bottom: 0.8em;
+    list-style-image: none;
+}
+
+.painel1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.bt-nome1 {
+    background: url('../images/03/bt01a.png');
+    width: 279px;
+    height: 288px;
+    border: none;
+    margin-right: 30px;
+}
+
+.bt-nome1:hover {
+    background: url('../images/03/bt01b.png');
+}
+
+.bt-nome2 {
+    background: url('../images/03/bt02a.png');
+    width: 279px;
+    height: 288px;
+    border: none;
+    margin-right: 30px;
+}
+
+.bt-nome2:hover {
+    background: url('../images/03/bt02b.png');
+}
+
+.espera {
+    max-width: 100%;
+    width: 750px;
+    height: 451px;
+    top: 835px;
+    left: 345px;
+    border-radius: 8px;
+    border: 1px;
+    margin: auto;
+    background: linear-gradient(0deg, #DFDFDF, #DFDFDF),
+        linear-gradient(0deg, #E4E4E4, #E4E4E4);
+    border: 1px solid #DFDFDF
+}
+
+.voltar {
+    width: 174px;
+    height: 39px;
+    padding: 10px;
+    border-radius: 4px;
+    gap: 10px;
+    font-weight: bold;
+    color: #000 !important;
+    background: #F5CA2E;
+    border: 1px solid #F5CA2E;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.btn-final {
+    text-align: center;
+}
+
+.moldura img {
+    filter: drop-shadow(#333 1px 3px 3px);
+}
+
+.moldura figcaption,
+.legenda {
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 425px) {
+    .painel1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .bt-nome1 {
+        margin-top: 30px;
+        margin-right: none;
+    }
+
+    .bt-nome2 {
+        margin-top: 30px;
+        margin-right: none;
+    }
+}
