@@ -1,0 +1,169 @@
+html,
+body {
+    background: url('../images/06/bg01.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+iframe {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.caixa-destaque {
+    background-color: #0b3b4b;
+    color: #fff;
+}
+
+.caixa-destaque {
+    width: 90%;
+}
+
+li {
+    margin-bottom: 0.8em;
+    list-style-image: url(../images/06/marcador.png);
+    padding-top: 10px;
+}
+
+.modal-body {
+    background: url('../images/06/bg02.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+
+.container-modal {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+h2,
+h3,
+h4 {
+    color: #50D7E2 !important;
+    font-weight: bold;
+}
+
+
+.espera {
+    max-width: 100%;
+    width: 750px;
+    height: 451px;
+    top: 835px;
+    left: 345px;
+    border-radius: 8px;
+    border: 1px;
+    margin: auto;
+    background: linear-gradient(0deg, #DFDFDF, #DFDFDF),
+        linear-gradient(0deg, #E4E4E4, #E4E4E4);
+    border: 1px solid #DFDFDF
+}
+
+.voltar {
+    width: 174px;
+    height: 39px;
+    padding: 10px;
+    border-radius: 4px;
+    gap: 10px;
+    font-weight: bold;
+    color: #000 !important;
+    background: #F5CA2E;
+    border: 1px solid #F5CA2E;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.btn-final {
+    text-align: center;
+}
+
+.moldura img {
+    filter: drop-shadow(#333 1px 3px 3px);
+}
+
+.moldura figcaption,
+.legenda {
+    font-size: 12px;
+}
+
+
+
+
+
+/* painel descarte */
+.painel-descarte {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.bt-descarte {
+    margin: 20px;
+    border: none;
+    height: 144px;
+    width: 592px;
+}
+
+.bt-descarte1 {
+    background: url('../images/06/bt01.png');
+}
+
+.bt-descarte2 {
+    background: url('../images/06/bt02.png');
+}
+
+.bt-descarte3 {
+    background: url('../images/06/bt03.png');
+}
+
+.bt-descarte1:hover {
+    background: url('../images/06/bt01b.png');
+}
+
+.bt-descarte2:hover {
+    background: url('../images/06/bt02b.png');
+}
+
+.bt-descarte3:hover {
+    background: url('../images/06/bt03b.png');
+}
+
+/* fim painel descarte */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .painel-descarte {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
