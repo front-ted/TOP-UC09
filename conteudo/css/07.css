@@ -1,0 +1,6 @@
+p {
+    page-break-after:always;
+    word-break: break-all;
+}
+
+@media (max-width: 768px) {}

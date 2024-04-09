@@ -1,0 +1,328 @@
+figcaption {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+figure {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h2,
+h3,
+h4 {
+    color: #50D7E2;
+    font-weight: bold;
+}
+
+.caixa-destaque,
+.caixa-destaque-livre {
+    background-color: #0b3b4b;
+    color: #fff;
+}
+
+.caixa-destaque {
+    width: 100%;
+}
+
+.bloco4,
+.bloco5,
+.bloco6,
+.bloco7,
+.bloco8,
+.bloco9,
+.bloco10 {
+    background: url('../images/05/bg.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #000;
+    padding-bottom: 70px;
+}
+
+.bloco1,
+.bloco2,
+.bloco3 {
+    background: url('../images/05/bg2.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #000;
+    padding-bottom: 50px;
+    padding-top: 70px;
+}
+
+
+.espera {
+    max-width: 100%;
+    width: 750px;
+    height: 451px;
+    position: relative;
+    top: -200px;
+    border-radius: 8px;
+    margin: auto;
+    background: linear-gradient(0deg, #DFDFDF, #DFDFDF),
+        linear-gradient(0deg, #E4E4E4, #E4E4E4);
+    border: 1px solid #DFDFDF
+}
+
+
+.fundo-tecnicos {
+    padding: 30px 0 0 0;
+}
+
+#booklet>header {
+    margin-top: 80px;
+    padding-right: 25vw;
+    padding-top: 0px;
+    margin-bottom: -80px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.voltar {
+    width: 174px;
+    height: 39px;
+    padding: 10px;
+    border-radius: 4px;
+    gap: 10px;
+    font-weight: bold;
+    color: #000 !important;
+    background: #F5CA2E;
+    border: 1px solid #F5CA2E;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+li {
+    margin-bottom: 0.8em;
+    list-style-image: url(../images/05/marcador.png);
+    padding-top: 10px;
+}
+
+/* parallax */
+#parallax-1 {
+    background-image: url("../images/05/01.png");
+}
+
+#parallax-2 {
+    background-image: url("../images/05/02.png");
+}
+
+#parallax-3 {
+    background-image: url("../images/05/03.png");
+}
+
+#parallax-4 {
+    background-image: url("../images/05/04.png");
+}
+
+.parallax {
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* fim parallax */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* painel de tecnicas */
+.painel-tecnicas {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bt-tecnicas {
+    height: 104px;
+    width: 280px;
+    margin: 20px;
+    border: none;
+}
+
+.bt-tecnica1 {
+    background: url('../images/05/bt01_01a.png');
+
+}
+
+.bt-tecnica2 {
+    background: url('../images/05/bt01_02a.png');
+}
+
+.bt-tecnica3 {
+    background: url('../images/05/bt01_03a.png');
+}
+
+.bt-tecnica4 {
+    background: url('../images/05/bt01_04a.png');
+}
+
+.bt-tecnica1:hover {
+    background: url('../images/05/bt01_01b.png');
+}
+
+.bt-tecnica2:hover {
+    background: url('../images/05/bt01_02b.png');
+}
+
+.bt-tecnica3:hover {
+    background: url('../images/05/bt01_03b.png');
+}
+
+.bt-tecnica4:hover {
+    background: url('../images/05/bt01_04b.png');
+}
+
+/* fim painel de tecnicas */
+/* painel de pos */
+.painel-pos {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bt-pos {
+    height: 104px;
+    width: 280px;
+    margin: 20px;
+    border: none;
+}
+
+.bt-pos1 {
+    background: url('../images/05/bt03_01a.png');
+
+}
+
+.bt-pos2 {
+    background: url('../images/05/bt03_02a.png');
+}
+
+.bt-pos1:hover {
+    background: url('../images/05/bt03_01b.png');
+}
+
+.bt-pos2:hover {
+    background: url('../images/05/bt03_02b.png');
+}
+
+/* fim painel de pos */
+/* painel de tipos */
+.painel-tipos {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bt-tipos {
+    height: 104px;
+    width: 280px;
+    margin: 20px;
+    border: none;
+}
+
+.bt-tipo1 {
+    background: url('../images/05/bt02_01a.png');
+
+}
+
+.bt-tipo2 {
+    background: url('../images/05/bt02_02a.png');
+}
+
+.bt-tipo3 {
+    background: url('../images/05/bt02_03a.png');
+}
+
+.bt-tipo4 {
+    background: url('../images/05/bt02_04a.png');
+}
+
+.bt-tipo5 {
+    background: url('../images/05/bt02_05a.png');
+}
+
+.bt-tipo1:hover {
+    background: url('../images/05/bt02_01b.png');
+}
+
+.bt-tipo2:hover {
+    background: url('../images/05/bt02_02b.png');
+}
+
+.bt-tipo3:hover {
+    background: url('../images/05/bt02_03b.png');
+}
+
+.bt-tipo4:hover {
+    background: url('../images/05/bt02_04b.png');
+}
+
+.bt-tipo5:hover {
+    background: url('../images/05/bt02_05b.png');
+}
+
+/* fim painel de tipos */
+@media (max-width: 768px) {
+    .painel-tecnicas {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .painel-tipos {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .painel-pos {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}

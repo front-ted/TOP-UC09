@@ -5,7 +5,9 @@ arredondar painel gaitinha e arrumar o layout dele
 Página 3
 a principio não precisa fazer nada, mas igual testar
 Página 4
-falta as imagens de etapas e bg falta a img5
+arrumar bg 
+Página 5
+não achei a imagem que corresponde a figura8
 
 
 
@@ -23,7 +25,7 @@ falta as imagens de etapas e bg falta a img5
 
 
 <figure>
-          <img src="../conteudo/images/04/" class="center-block img-responsive print borda"
+          <img src="../conteudo/images/06/" class="center-block img-responsive print borda"
             alt="">
           <figcaption> <br>
            

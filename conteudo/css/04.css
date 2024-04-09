@@ -1,3 +1,10 @@
+html,
+body {
+    background: url('../images/04/bg.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
 /*---------- MENU ----------*/
 .eng-item-menu {
     opacity: 1;
