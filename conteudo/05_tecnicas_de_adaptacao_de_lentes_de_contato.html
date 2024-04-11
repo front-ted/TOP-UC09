@@ -24,6 +24,12 @@
   <link href="css/aos.css" type="text/css" rel="stylesheet">
   <link rel="stylesheet" href="css/05.css">
   <link href="css/print.css" type="text/css" rel="stylesheet">
+
+  <!-- relacionar colunas -->
+  <link rel="stylesheet" href="js/dragula.css">
+  <link rel="stylesheet" href="css/game-custom.css">
+  <!-- fim relacionar colunas -->
+
   <!-- <link rel="stylesheet" href="js/dragula.css">
   <link rel="stylesheet" href="css/game-custom.css"> -->
 
@@ -273,9 +279,121 @@
 
         <div class="bloco3">
           <div class="container">
-            Criar jogo arrasta e cola ou relacionar colunas com selo da presencialidade
+            <img src="../conteudo/images/selo-presencialidade.png" class="center-block img-responsive no-print borda"
+              alt="" style="width: 100px;">
+            <div id="content-game">
+              <div class="container-fluid game-body no-print" style="padding:0;">
+                <div class="row">
+                  <div class="col-10 align-self-start d-block m-auto">
+                    <div class="row game-descricao-img"><img src="./images/05/pg2-praticar2-ico.png"
+                        style="width: 150px;" alt=""></div>
+                    <div class="row game-descricao">
+                      <p>Teste seus conhecimentos sobre as técnicas de adaptação de LCs para candidatos presbitas: </p>
+                    </div>
+                  </div>
+                  <div id="slots" class="col-12 mt-5 mb-5">
+                    <div class="row">
+                      <div class="col-12 col-md-4 mt-3 mb-3">
+                        <div class="game-titulo">
+                          <p>LC para longe e óculos para perto</p>
+                        </div>
+                        <div id="slot-1" class="slot">
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mt-3 mb-3">
+                        <div class="game-titulo">
+                          <p>Monovisão</p>
+                        </div>
+                        <div id="slot-2" class="slot">
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mt-3 mb-3">
+                        <div class="game-titulo">
+                          <p>LCs MF</p>
+                        </div>
+                        <div id="slot-3" class="slot">
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mt-3 mb-3">
+                        <div class="game-titulo">
+                          <p>Monovisão modificada</p>
+                        </div>
+                        <div id="slot-4" class="slot">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="cardPile" class="game-itens-container">
+                    <div id="card-1" class="card" data-target="slot-1">
+                      Corrigir a visão de longe com lentes de contato e complementar a visão de perto com óculos de
+                      leitura.
+                    </div>
+                    <div id="card-2" class="card" data-target="slot-2">
+                      Adaptação de uma lente de contato para correção da visão de longe em um olho e outra para correção
+                      da visão de perto no outro olho.
+                    </div>
+                    <div id="card-3" class="card" data-target="slot-3">
+                      Lentes de contato multifocais que oferecem correção visual para diversas distâncias.
+                    </div>
+                    <div id="card-4" class="card" data-target="slot-4">
+                      Uma combinação das técnicas de monovisão e adaptação de lentes multifocais, em que um olho é
+                      corrigido para longe e o outro é corrigido com uma lente multifocal.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="bgmodal-acerto" tabindex="-1" aria-labelledby="bgmodal-passou"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content no-print">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-check    "></i> Parabéns, resposta
+                      correta! </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-12 col-lg-4">
+                      </div>
+                      <div class="col-12 col-lg-8">
+                        <p>Certo.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="bgmodal-erro" tabindex="-1" aria-labelledby="bgmodal-passou" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content no-print">
+                  <div class="modal-header bg-danger">
+                    <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-times    "></i> Atenção! </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-12 col-lg-4">
+                      </div>
+                      <div class="col-12 col-lg-8">
+                        <p>Errado.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
 
         <div class="parallax" id="parallax-2"></div>
 
@@ -761,9 +879,138 @@
 
         <div class="bloco6">
           <div class="container">
-            <h3>Teste seus conhecimentos sobre as técnicas de adaptação de LCs para candidatos portadores de ceratocone:
-            </h3>
-            Criar jogo arrasta e cola ou relacionar colunas com selo da presencialidade
+            <img src="../conteudo/images/selo-presencialidade.png" class="center-block img-responsive no-print borda"
+              alt="" style="width: 100px;">
+            <div id="content-game">
+              <div class="container-fluid game-body no-print" style="padding:0;">
+                <div class="row">
+                  <div class="col-10 align-self-start d-block m-auto">
+                    <div class="row game-descricao-img"><img src="./images/05/pg2-praticar2-ico.png"
+                        style="width: 150px;" alt=""></div>
+                    <div class="row game-descricao">
+                      <p>Teste seus conhecimentos sobre as técnicas de adaptação de LCs para candidatos portadores de
+                        ceratocone:</p>
+                    </div>
+                  </div>
+                  <div id="slots" class="col-12 mt-5 mb-5">
+                    <div class="row">
+                      <div class="col-12 col-md-4 mt-3 mb-3">
+                        <div class="game-titulo">
+                          <p>LC gelatinosa dupla face</p>
+                        </div>
+                        <div id="slot-5" class="slot">
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mt-3 mb-3">
+                        <div class="game-titulo">
+                          <p>LC RGP multiasférica</p>
+                        </div>
+                        <div id="slot-6" class="slot">
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mt-3 mb-3">
+                        <div class="game-titulo">
+                          <p>LC RGP dupla face</p>
+                        </div>
+                        <div id="slot-7" class="slot">
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mt-3 mb-3">
+                        <div class="game-titulo">
+                          <p>LC RGP escleral</p>
+                        </div>
+                        <div id="slot-8" class="slot">
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mt-3 mb-3">
+                        <div class="game-titulo">
+                          <p>Sistema <i>piggyback</i></p>
+                        </div>
+                        <div id="slot-9" class="slot">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="cardPile" class="game-itens-container">
+                    <div id="card-5" class="card" data-target="slot-5">
+                      Essas lentes especiais têm duas curvaturas na parte posterior, uma para se adaptar ao formato
+                      cônico da córnea e outra para estabilizar a lente. São indicadas para ceratocone incipiente e
+                      moderado, especialmente para candidatos com intolerância ao material RGP.
+                    </div>
+                    <div id="card-6" class="card" data-target="slot-6">
+                      São lentes rígidas gás-permeáveis corneanas, compatíveis com ceratocones incipientes e moderados,
+                      podendo ser usadas em cones descentralizados inferiores. Apesar do desconforto inicial,
+                      proporcionam conforto e mobilidade na relação lente-córnea.
+                    </div>
+                    <div id="card-7" class="card" data-target="slot-7">
+                      Apresentam duas curvas-base na face posterior, uma mais cônica para encaixe do ápice e outra mais
+                      plana para alinhamento com a zona mediana. São adaptadas conforme a interação entre o diâmetro do
+                      cone e da córnea do candidato.
+                    </div>
+                    <div id="card-8" class="card" data-target="slot-8">
+                      Essas lentes têm diâmetro maior e se apoiam na esclera, evitando o atrito da pálpebra com a borda
+                      da lente. Proporcionam conforto superior e evitam erosões na região corneana, porém têm menor
+                      transmissibilidade de oxigênio.
+                    </div>
+                    <div id="card-9" class="card" data-target="slot-9">
+                      Consiste em utilizar uma LC gelatinosa de alto DK/t por baixo de uma LC RGP corneana, com a
+                      intenção de reduzir o atrito e proporcionar maior conforto. Porém, pode não ser vantajoso em razão
+                      do aumento do trabalho com cuidados e manuseio, além de diminuir o índice de oxigenação na
+                      superfície corneana.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="bgmodal-acerto1" tabindex="-1" aria-labelledby="bgmodal-passou"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content no-print">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-check    "></i> Parabéns, resposta
+                      correta! </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-12 col-lg-4">
+                      </div>
+                      <div class="col-12 col-lg-8">
+                        <p>Certo.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="bgmodal-erro1" tabindex="-1" aria-labelledby="bgmodal-passou"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content no-print">
+                  <div class="modal-header bg-danger">
+                    <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-times    "></i> Atenção! </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-12 col-lg-4">
+                      </div>
+                      <div class="col-12 col-lg-8">
+                        <p>Errado.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -928,9 +1175,104 @@
 
         <div class="bloco8">
           <div class="container">
-            <h3>Teste seus conhecimentos sobre as técnicas de adaptação de LCs em pacientes pós-cirúrgicos:
-            </h3>
-            Criar jogo arrasta e cola ou relacionar colunas com selo da presencialidade
+            <img src="../conteudo/images/selo-presencialidade.png" class="center-block img-responsive no-print borda"
+              alt="" style="width: 100px;">
+            <div id="content-game">
+              <div class="container-fluid game-body no-print" style="padding:0;">
+                <div class="row">
+                  <div class="col-10 align-self-start d-block m-auto">
+                    <div class="row game-descricao-img"><img src="./images/05/pg2-praticar2-ico.png"
+                        style="width: 150px;" alt=""></div>
+                    <div class="row game-descricao">
+                      <p>Teste seus conhecimentos sobre as técnicas de adaptação de LCs em pacientes pós-cirúrgicos:</p>
+                    </div>
+                  </div>
+                  <div id="slots" class="col-12 mt-5 mb-5">
+                    <div class="row">
+                      <div class="col-12 col-md-4 mt-3 mb-3">
+                        <div class="game-titulo">
+                          <p>Adaptação de LC para pós-cirurgia refrativa</p>
+                        </div>
+                        <div id="slot-10" class="slot">
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mt-3 mb-3">
+                        <div class="game-titulo">
+                          <p>Adaptação de LC para pós-transplante de córnea</p>
+                        </div>
+                        <div id="slot-11" class="slot">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="cardPile" class="game-itens-container">
+                    <div id="card-10" class="card" data-target="slot-10">
+                      Após cirurgias refrativas para correção de miopia e astigmatismo, que podem resultar em
+                      irregularidades na córnea, são utilizados modelos específicos de lentes de contato rígidas
+                      gás-permeáveis corneanas. Essas lentes têm diâmetro grande para melhor centralização e apresentam
+                      uma curva-base mais plana que a intermediária, ao contrário das lentes de contato tradicionais.
+                    </div>
+                    <div id="card-11" class="card" data-target="slot-11">
+                      Após transplantes de córnea, que frequentemente resultam em alto grau de astigmatismo e
+                      irregularidades na superfície corneana, as lentes de contato desempenham um papel importante na
+                      reabilitação da acuidade visual. Tanto lentes de contato gelatinosas quanto rígidas gás-permeáveis
+                      podem ser adaptadas, porém as rígidas gás-permeáveis são mais comuns em razão da capacidade de
+                      correção das irregularidades e da maior transmissibilidade de oxigênio. A adaptação é iniciada
+                      após a retirada de todas as suturas e a estabilização da ceratometria do paciente.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="bgmodal-acerto2" tabindex="-1" aria-labelledby="bgmodal-passou"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content no-print">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-check    "></i> Parabéns, resposta
+                      correta! </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-12 col-lg-4">
+                      </div>
+                      <div class="col-12 col-lg-8">
+                        <p>Certo.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="bgmodal-erro2" tabindex="-1" aria-labelledby="bgmodal-passou"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content no-print">
+                  <div class="modal-header bg-danger">
+                    <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-times    "></i> Atenção! </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-12 col-lg-4">
+                      </div>
+                      <div class="col-12 col-lg-8">
+                        <p>Errado.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -1268,8 +1610,13 @@
   <script src="js/game-custom.js"></script> -->
   <script src="js/aos.js"></script>
   <script src="js/parallax.js"></script>
-
   <script src="js/01.js"></script>
+
+  <!-- relacionar colunas -->
+  <script src='js/dragula.js'></script>
+  <script src="js/game-custom.js"></script>
+  <!-- fim relacionar colunas -->
+
   <noscript>
     <style media="screen">
       .over-loader {

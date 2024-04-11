@@ -1,3 +1,5 @@
+Página 1
+fazer linha do tempo
 Página 2
 arredondar tabela e testar
 arrumar painel clicavel, colocar as setas e testar responsividade
@@ -7,7 +9,11 @@ a principio não precisa fazer nada, mas igual testar
 Página 4
 arrumar bg 
 Página 5
-não achei a imagem que corresponde a figura8
+não achei a imagem que corresponde a figura8, arrumar cartas do jogo bloco 6 e 8 e pedir para criar um visual para o jogo
+Página 6
+arrumar layout
+Página 7
+arrumar layout
 
 
 
@@ -25,7 +31,7 @@ não achei a imagem que corresponde a figura8
 
 
 <figure>
-          <img src="../conteudo/images/06/" class="center-block img-responsive print borda"
+          <img src="../conteudo/images/01/" class="center-block img-responsive print borda"
             alt="">
           <figcaption> <br>
            
