@@ -123,6 +123,22 @@
     margin: 25px 0;
 }
 
+#cardPilej2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+#cardPilej3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
 #content-game {
     max-width: 928px;
     margin: auto;
@@ -160,6 +176,16 @@ color: white;
 
     #slots .row,
     #cardPile {
+        padding-top: 5px !important;
+        margin-bottom: 5px !important;
+    }
+
+    #cardPilej2 {
+        padding-top: 5px !important;
+        margin-bottom: 5px !important;
+    }
+
+    #cardPilej3 {
         padding-top: 5px !important;
         margin-bottom: 5px !important;
     }
