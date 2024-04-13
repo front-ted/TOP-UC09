@@ -24,6 +24,10 @@
   <link href="css/aos.css" type="text/css" rel="stylesheet">
   <link href="css/06.css" type="text/css" rel="stylesheet">
   <link href="css/print.css" type="text/css" rel="stylesheet">
+  <!-- relacionar colunas -->
+  <link rel="stylesheet" href="js/dragula.css">
+  <link rel="stylesheet" href="css/game-custom.css">
+  <!-- fim relacionar colunas -->
   <!-- Estilos do visualizador -->
   <link rel="stylesheet" href="objetos/olho3d/viewer_3d/css/viewer.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
@@ -89,10 +93,11 @@
         <div class="modal modal-100 fade" id="modal-descarte1" aria-hidden="false">
           <div class="modal-dialog">
             <div class="modal-content no-print">
-              <div class="modal-body">
+              <div class="modal-body modal-principal">
                 <div class="container container-modal">
                   <div class="modal-header" style="padding-top: 30px;">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <button id="topo1" type="button" class="close" data-dismiss="modal"
+                      aria-hidden="true">&times;</button>
                   </div>
                   <h3>Cuidados na armazenagem de lentes de contato e de produtos utilizados em contatologia</h3>
                   <p>Para prestar um serviço de adaptação de lente de contato (LC), o técnico em óptica especialista
@@ -225,11 +230,12 @@
                   <ul>
                     <li>Soluções de higienização de LC </li>
                   </ul>
-                  As soluções para assepsia de LC, enquanto estiverem em uso, deverão ser armazenadas em um armário
-                  presente no
-                  setor de adaptação, evitando contato de luz e calor. As soluções deverão ser descartadas após 30 dias
-                  do seu
-                  deslacre.
+                  <p> As soluções para assepsia de LC, enquanto estiverem em uso, deverão ser armazenadas em um armário
+                    presente no
+                    setor de adaptação, evitando contato de luz e calor. As soluções deverão ser descartadas após 30
+                    dias
+                    do seu
+                    deslacre.</p>
                   <figure>
                     <img src="../conteudo/images/06/img06.png" class="center-block img-responsive print borda"
                       alt="Imagem mostra soluções de higienização de LC e estojos de LC armazenados em espaço interno de um armário. ">
@@ -263,6 +269,9 @@
                     especialista em LC deverá estar ciente de todas as regras de armazenagem das LCs e dos produtos
                     utilizados
                     em contatologia, garantindo assim a organização e a preservação do espaço onde atua. </p>
+                  <div class="btn-final no-print">
+                    <a href="#topo1"><button class="voltar">Voltar</button></a>
+                  </div>
                   <div class="modal-footer">
                     <button type="button" class="botao borda-primaria-03" data-dismiss="modal">Fechar</button>
                   </div>
@@ -274,10 +283,11 @@
         <div class="modal modal-100 fade" id="modal-descarte2" aria-hidden="false">
           <div class="modal-dialog">
             <div class="modal-content no-print">
-              <div class="modal-body">
+              <div class="modal-body modal-principal">
                 <div class="container container-modal">
                   <div class="modal-header" style="padding-top: 30px;">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <button id="topo2" type="button" class="close" data-dismiss="modal"
+                      aria-hidden="true">&times;</button>
                   </div>
                   <h3>Biossegurança aplicada à adaptação de lentes de contato </h3>
                   <p>Ao adaptar LCs, o profissional técnico em óptica especialista está executando seu trabalho em
@@ -475,15 +485,17 @@
                       <li>Lavar frequentemente as mãos com água e sabão, por meio de técnica adequada</li>
                     </ul>
                   </div>
+                  <figure>
+                    <img src="../conteudo/images/06/img07.png" class="center-block img-responsive print borda" alt="">
+                  </figure>
                   <p>Acompanhe o passo a passo da técnica adequada da lavagem de mãos: </p>
                   <figure>
-                    <img src="../conteudo/images/06/" class="center-block img-responsive print borda"
+                    <img src="../conteudo/images/06/img08.png" class="center-block img-responsive print borda"
                       alt="Figura mostra seis desenhos ensinando cada passo da lavagem de mãos. Da esquerda para a direita, o primeiro mostra as duas mãos abertas com espuma de sabão, o segundo mostra a mão direita esfregando a palma esquerda, o terceiro mostra a mão direita esfregando entre os dedos da mão esquerda, o quarto mostra a mão esquerda esfregando o polegar direito, o quinto mostra a mão direita esfregando o dorso da mão esquerda e o sexto mostra a mão esquerda lavando o punho direito.">
                     <figcaption>Técnica adequada da lavagem de mãos<br>
                       Fonte: Soares (2020)
                     </figcaption>
                   </figure>
-
                   <div class="caixa-destaque">
                     <p><b>Observação importante:</b> não é recomendado utilizar álcool em gel nas mãos ao adaptar LC, já
                       que o
@@ -498,11 +510,23 @@
                   <p>Quanto ao ambiente de trabalho, é preciso prezar pela redução de bactérias e micro-organismos em
                     materiais
                     e equipamento utilizados, garantindo a biossegurança do ambiente. </p>
-                  <figure>
-                    <img src="../conteudo/images/06/" class="center-block img-responsive print borda" alt="">
-                    <figcaption> <br>
-
-                    </figcaption>
+                  <figure class="painel-higienizacao no-print">
+                    <button type="button" class="bt-higienizacao bt-higienizacao1" data-toggle="popover"
+                      data-trigger="focus" data-placement="top"
+                      data-content="Limpeza: É a remoção da sujeira de superfícies. Se utilizar um produto químico no processo convencional de limpeza, com esfregação e enxágue, há uma redução de até 60% de microbiologia. Porém, somente a limpeza não é o suficiente para eliminar vírus e bactérias.">
+                    </button>
+                    <button type="button" class="bt-higienizacao bt-higienizacao2" data-toggle="popover"
+                      data-trigger="focus" data-placement="top"
+                      data-content="Desinfecção: É o processo que consiste no uso e na aplicação de desinfetante, produto que busca eliminar das superfícies 99,999% de germes, bactérias e vírus, reduzindo-os a níveis não patogênicos.">
+                    </button>
+                    <button type="button" class="bt-higienizacao bt-higienizacao3" data-toggle="popover"
+                      data-trigger="focus" data-placement="top"
+                      data-content="Esterilização: Técnica que significa efetuar a eliminação total de germes, inclusive seus esporos, por meio de processos físicos ou químicos bastante agressivos e restritos.">
+                    </button>
+                    <button type="button" class="bt-higienizacao bt-higienizacao4" data-toggle="popover"
+                      data-trigger="focus" data-placement="top"
+                      data-content="Sanitização: Sanitização é o processo de redução de bactérias e micro-organismos até um nível considerado seguro pelos órgãos de saúde pública, garantindo a biossegurança do ambiente sanitizado.">
+                    </button>
                   </figure>
                   <p>Por meio das medidas de higienização, evita-se a <b>contaminação cruzada</b>, que consiste na
                     transferência
@@ -543,7 +567,7 @@
                     de LC,
                     obtendo praticidade e segurança em um só produto.</p>
                   <figure>
-                    <img src="../conteudo/images/06/" class="center-block img-responsive print borda"
+                    <img src="../conteudo/images/06/info01.png" class="center-block img-responsive print borda"
                       alt="Figura mostra mãos do profissional realizando assepsia de uma LC gelatinosa colorida e abaixo um estojo branco de acondicionamento para LC.">
                     <figcaption>Assepsia de LC com produto multiuso<br>
                       Fonte: EyeColors (c2024)
@@ -577,13 +601,12 @@
                     de
                     provas. </p>
                   <figure>
-                    <img src="../conteudo/images/06/" class="center-block img-responsive print borda"
+                    <img src="../conteudo/images/06/info02.png" class="center-block img-responsive print borda"
                       alt="Figura mostra estojo para desinfecção de LC, em duas partes, sendo à direita o reservatório para solução e à esquerda a tampa com discos vazados para compartimentar as LCs a serem desinfetadas.">
                     <figcaption>Estojo especial para desinfecção de LC RGP<br>
                       Fonte: Senac EAD (2024)
                     </figcaption>
                   </figure>
-
                   <ul>
                     <li><b>Solução salina 0,9%</b></li>
                   </ul>
@@ -602,6 +625,9 @@
                     garantir a proteção e a saúde tanto dos profissionais que atuam no ambiente quanto dos futuros
                     usuários de
                     LC. </p>
+                  <div class="btn-final no-print">
+                    <a href="#topo2"><button class="voltar">Voltar</button></a>
+                  </div>
                   <div class="modal-footer">
                     <button type="button" class="botao borda-primaria-03" data-dismiss="modal">Fechar</button>
                   </div>
@@ -613,10 +639,11 @@
         <div class="modal modal-100 fade" id="modal-descarte3" aria-hidden="false">
           <div class="modal-dialog">
             <div class="modal-content no-print">
-              <div class="modal-body">
+              <div class="modal-body modal-principal">
                 <div class="container container-modal">
                   <div class="modal-header" style="padding-top: 30px;">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <button id="topo3" type="button" class="close" data-dismiss="modal"
+                      aria-hidden="true">&times;</button>
                   </div>
                   <h3>Descarte de resíduos do processo de adaptação de lentes de contato </h3>
                   <p>Quem busca aplicar as ideias da sustentabilidade leva em consideração a harmonia entre a natureza e
@@ -651,7 +678,7 @@
                     ambiental,
                     contaminando os animais, que acabam ingerindo esse lixo (Central Oftálmica, 2020). </p>
                   <figure>
-                    <img src="../conteudo/images/06/img08.png" class="center-block img-responsive print borda"
+                    <img src="../conteudo/images/06/img09.png" class="center-block img-responsive print borda"
                       alt="Figura mostra fundo do mar com vários resíduos de lixo de plástico, poluindo o oceano.">
                     <figcaption>Lixo de plástico no fundo do oceano<br>
                       Fonte: Cuetos (2022)
@@ -669,7 +696,7 @@
                     lacres de
                     alumínio podem ser depositados na coleta seletiva, para posterior reciclagem. </p>
                   <figure>
-                    <img src="../conteudo/images/06/img09.png" class="center-block img-responsive print borda"
+                    <img src="../conteudo/images/06/img10.png" class="center-block img-responsive print borda"
                       alt="Figura mostra mãos do profissional descartando uma LC em um cesto de lixo branco com a tampa aberta.">
                     <figcaption>Descarte de LC no lixo comum<br>
                       Fonte: Acuvue (c2023)
@@ -719,7 +746,7 @@
                     descarte
                     correto das suas LCs Acuvue: </p>
                   <figure>
-                    <img src="../conteudo/images/06/img10.png" class="center-block img-responsive print borda"
+                    <img src="../conteudo/images/06/img11.png" class="center-block img-responsive print borda"
                       alt="Figura mostra o encarte de orientação do fabricante Johnson & Johnson, referente ao descarte correto das suas LCs Acuvue, onde em cima mostra figuras simbolizando o planeta com casas, árvores, sol e nuvens e abaixo mostra os três passos do descarte, sendo da esquerda para direita o primeiro um cesto de lixo com uma caixinha de LC sendo descartada, no segundo um blister de LC sendo aberto e no terceiro uma LC sendo jogada no cesto de lixo.">
                     <figcaption>Encarte do fabricante Johnson & Johnson referente ao descarte correto das LCs Acuvue<br>
                       Fonte: Adaptado de Johnson & Johnson (2020)
@@ -734,6 +761,9 @@
                     ambiente. </p>
                   <p class="text-center no-print">ESPERA AUDIOVISUAL.</p>
                   <iframe src="" class="espera center-block img-responsive" frameborder="0"></iframe>
+                  <div class="btn-final no-print">
+                    <a href="#topo3"><button class="voltar">Voltar</button></a>
+                  </div>
                   <div class="modal-footer">
                     <button type="button" class="botao borda-primaria-03" data-dismiss="modal">Fechar</button>
                   </div>
@@ -857,9 +887,10 @@
           <ul>
             <li>Soluções de higienização de LC </li>
           </ul>
-          As soluções para assepsia de LC, enquanto estiverem em uso, deverão ser armazenadas em um armário presente no
-          setor de adaptação, evitando contato de luz e calor. As soluções deverão ser descartadas após 30 dias do seu
-          deslacre.
+          <p> As soluções para assepsia de LC, enquanto estiverem em uso, deverão ser armazenadas em um armário presente
+            no
+            setor de adaptação, evitando contato de luz e calor. As soluções deverão ser descartadas após 30 dias do seu
+            deslacre.</p>
           <figure>
             <img src="../conteudo/images/06/img06.png" class="center-block img-responsive print borda"
               alt="Imagem mostra soluções de higienização de LC e estojos de LC armazenados em espaço interno de um armário. ">
@@ -979,7 +1010,7 @@
           </div>
           <p>Acompanhe o passo a passo da técnica adequada da lavagem de mãos: </p>
           <figure>
-            <img src="../conteudo/images/06/" class="center-block img-responsive print borda"
+            <img src="../conteudo/images/06/img07.png" class="center-block img-responsive print borda"
               alt="Figura mostra seis desenhos ensinando cada passo da lavagem de mãos. Da esquerda para a direita, o primeiro mostra as duas mãos abertas com espuma de sabão, o segundo mostra a mão direita esfregando a palma esquerda, o terceiro mostra a mão direita esfregando entre os dedos da mão esquerda, o quarto mostra a mão esquerda esfregando o polegar direito, o quinto mostra a mão direita esfregando o dorso da mão esquerda e o sexto mostra a mão esquerda lavando o punho direito.">
             <figcaption>Técnica adequada da lavagem de mãos<br>
               Fonte: Soares (2020)
@@ -993,16 +1024,27 @@
               utilizá-la. </p>
           </div>
           <ul>
-            <li>Medidas de higienização do setor de adaptação </li>
+            <li>Medidas de higienização do setor de adaptação</li>
           </ul>
           <p>Quanto ao ambiente de trabalho, é preciso prezar pela redução de bactérias e micro-organismos em materiais
             e equipamento utilizados, garantindo a biossegurança do ambiente. </p>
-          <figure>
-            <img src="../conteudo/images/06/" class="center-block img-responsive print borda" alt="">
-            <figcaption> <br>
-
-            </figcaption>
-          </figure>
+          <ol>
+            <li>Limpeza</li>
+            <p>É a remoção da sujeira de superfícies. Se utilizar um produto químico no processo convencional de
+              limpeza,
+              com esfregação e enxágue, há uma redução de até 60% de microbiologia. Porém, somente a limpeza não é o
+              suficiente para eliminar vírus e bactérias.</p>
+            <li>Desinfecção</li>
+            <p>É o processo que consiste no uso e na aplicação de desinfetante, produto que busca eliminar das
+              superfícies
+              99,999% de germes, bactérias e vírus, reduzindo-os a níveis não patogênicos.</p>
+            <li>Esterilização</li>
+            <p>Técnica que significa efetuar a eliminação total de germes, inclusive seus esporos, por meio de processos
+              físicos ou químicos bastante agressivos e restritos.</p>
+            <li>Sanitização</li>
+            <p>Sanitização é o processo de redução de bactérias e micro-organismos até um nível considerado seguro pelos
+              órgãos de saúde pública, garantindo a biossegurança do ambiente sanitizado.</p>
+          </ol>
           <p>Por meio das medidas de higienização, evita-se a <b>contaminação cruzada</b>, que consiste na transferência
             de micro-organismos de uma pessoa, uma superfície ou um objeto para outra pessoa, resultando na transmissão
             de algum vírus ou bactéria. </p>
@@ -1031,7 +1073,7 @@
           <p>No mercado atual, conta-se quase que exclusivamente com soluções multiuso para fins de higienização de LC,
             obtendo praticidade e segurança em um só produto.</p>
           <figure>
-            <img src="../conteudo/images/06/" class="center-block img-responsive print borda"
+            <img src="../conteudo/images/06/info01.png" class="center-block img-responsive print borda"
               alt="Figura mostra mãos do profissional realizando assepsia de uma LC gelatinosa colorida e abaixo um estojo branco de acondicionamento para LC.">
             <figcaption>Assepsia de LC com produto multiuso<br>
               Fonte: EyeColors (c2024)
@@ -1058,7 +1100,7 @@
           <p>Esta é uma solução voltada à desinfecção das LCs RGPs e que é utilizada na experimentação de caixas de
             provas. </p>
           <figure>
-            <img src="../conteudo/images/06/" class="center-block img-responsive print borda"
+            <img src="../conteudo/images/06/info02.png" class="center-block img-responsive print borda"
               alt="Figura mostra estojo para desinfecção de LC, em duas partes, sendo à direita o reservatório para solução e à esquerda a tampa com discos vazados para compartimentar as LCs a serem desinfetadas.">
             <figcaption>Estojo especial para desinfecção de LC RGP<br>
               Fonte: Senac EAD (2024)
@@ -1099,7 +1141,7 @@
             triagem em redes de esgoto, indo parar nos oceanos, agravando ainda mais o problema do impacto ambiental,
             contaminando os animais, que acabam ingerindo esse lixo (Central Oftálmica, 2020). </p>
           <figure>
-            <img src="../conteudo/images/06/img08.png" class="center-block img-responsive print borda"
+            <img src="../conteudo/images/06/img09.png" class="center-block img-responsive print borda"
               alt="Figura mostra fundo do mar com vários resíduos de lixo de plástico, poluindo o oceano.">
             <figcaption>Lixo de plástico no fundo do oceano<br>
               Fonte: Cuetos (2022)
@@ -1113,7 +1155,7 @@
             ao menos que terminem seu ciclo de vida no aterro sanitário. Já as respectivas embalagens e os lacres de
             alumínio podem ser depositados na coleta seletiva, para posterior reciclagem. </p>
           <figure>
-            <img src="../conteudo/images/06/img09.png" class="center-block img-responsive print borda"
+            <img src="../conteudo/images/06/img10.png" class="center-block img-responsive print borda"
               alt="Figura mostra mãos do profissional descartando uma LC em um cesto de lixo branco com a tampa aberta.">
             <figcaption>Descarte de LC no lixo comum<br>
               Fonte: Acuvue (c2023)
@@ -1150,7 +1192,7 @@
           <p>Veja um programa de conscientização realizado pelo fabricante Johnson & Johnson, orientando o descarte
             correto das suas LCs Acuvue: </p>
           <figure>
-            <img src="../conteudo/images/06/img10.png" class="center-block img-responsive print borda"
+            <img src="../conteudo/images/06/img11.png" class="center-block img-responsive print borda"
               alt="Figura mostra o encarte de orientação do fabricante Johnson & Johnson, referente ao descarte correto das suas LCs Acuvue, onde em cima mostra figuras simbolizando o planeta com casas, árvores, sol e nuvens e abaixo mostra os três passos do descarte, sendo da esquerda para direita o primeiro um cesto de lixo com uma caixinha de LC sendo descartada, no segundo um blister de LC sendo aberto e no terceiro uma LC sendo jogada no cesto de lixo.">
             <figcaption>Encarte do fabricante Johnson & Johnson referente ao descarte correto das LCs Acuvue<br>
               Fonte: Adaptado de Johnson & Johnson (2020)
@@ -1229,6 +1271,11 @@
   <script src="js/01.js"></script>
   <script src="js/aos.js"></script>
   <script>AOS.init()</script>
+  <!-- relacionar colunas -->
+  <script src='js/dragula.js'></script>
+  <script src="js/game-custom.js"></script>
+  <!-- fim relacionar colunas -->
+  <script src="js/parallax.js"></script>
   <noscript>
     <style media="screen">
       .over-loader {
@@ -1236,88 +1283,50 @@
       }
     </style>
   </noscript>
-
-  <!--arquivo js necessario para o funcionamento do visualizador 3d-->
-  <script type="module" src="objetos/olho3d/viewer_3d/js/model-viewer.min.js"></script>
-
-  <!-- arquivo js responsavel pela funcionalidade de panning no modelo 3d-->
-  <script src="objetos/olho3d/viewer_3d/js/pan.js"></script>
-
   <script>
-    AddPan('#objeto01');
+    $('.divisoria').parallax();
+
+    //inicializa popover
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+    //inicializa tooltip
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+
+    window.addEventListener('load', function () {
+      AOS.init()
+    })
+  </script>
+  <!-- Versao atual do handtalk -->
+  <script>
+    var scriptElem = document.createElement("script");
+    scriptElem.src = "https://plugin.handtalk.me/web/latest/handtalk.min.js",
+      scriptElem.charset = "UTF-8",
+      scriptElem.onload = function () {
+        window.ht = new HT({
+          token: "bf5b7efb148a829a126a0e0c9fd533bf",
+          align: "top",
+          videoEnabled: true,
+          ytEmbedReplace: true,
+          mobileConfig: {
+            align: "right",
+            actionsAlign: "top",
+            customButtonStyle: {
+              borderRadius: "6px",
+              size: "38px",
+              horizontalMargin: "13px",
+              bottomMargin: "140px",
+              rightMargin: "40px"
+            }
+          }
+        });
+        $('.ht-skip').attr("aria-hidden", "true")
+      },
+      document.body.appendChild(scriptElem);
 
   </script>
 </body>
 
 </html>
-<script>
-  //inicializa zoom na imagem
-  $('.zoom-imagem').magnificPopup({
-    type: 'image',
-    mainClass: 'mfp-with-zoom', // this class is for CSS animation below
-    zoom: {
-      enabled: true, // By default it's false, so don't forget to enable it
-
-      duration: 300, // duration of the effect, in milliseconds
-      easing: 'ease-in-out', // CSS transition easing function
-
-      // The "opener" function should return the element from which popup will be zoomed in
-      // and to which popup will be scaled down
-      // By defailt it looks for an image tag:
-      opener: function (openerElement) {
-        // openerElement is the element on which popup was initialized, in this case its <a> tag
-        // you don't need to add "opener" option if this code matches your needs, it's defailt one.
-        return openerElement.is('img') ? openerElement : openerElement.find('img');
-      }
-    },
-    image: {
-      markup: '<div class="mfp-figure">' +
-        '<div class="mfp-close"></div>' +
-        '<div class="mfp-img"></div>' + // Floated left
-        '<div class="mfp-bottom-bar">' + '<figcaption>' + '<div class="mfp-title" style="text-align:center"></div>' +
-        '<div class="mfp-counter"></div>' + '</figcaption>' +
-        '</div>' +
-        '</div>', // Popup HTML markup. `.mfp-img` div will be replaced with img tag, `.mfp-close` by close button
-
-      cursor: 'mfp-zoom-out-cur', // Class that adds zoom cursor, will be added to body. Set to null to disable zoom out cursor.
-
-      tError: '<a href="%url%">A imagem</a> não pode ser carregada.' // Error message
-    }
-  });
-
-  //inicializa popover
-  $(function () {
-    $('[data-toggle="popover"]').popover()
-  })
-  //inicializa tooltip
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  })
-
-</script>
-<script>
-  var scriptElem = document.createElement("script");
-  scriptElem.src = "https://plugin.handtalk.me/web/latest/handtalk.min.js",
-    scriptElem.charset = "UTF-8",
-    scriptElem.onload = function () {
-      window.ht = new HT({
-        token: "bf5b7efb148a829a126a0e0c9fd533bf",
-        videoEnabled: true,
-        ytEmbedReplace: true,
-        align: "top",
-        mobileConfig: {
-          align: "right",
-          actionsAlign: "top",
-          customButtonStyle: {
-            borderRadius: "6px",
-            size: "38px",
-            horizontalMargin: "13px",
-            bottomMargin: "140px",
-            rightMargin: "40px"
-          }
-        }
-      })
-    },
-    document.body.appendChild(scriptElem);
-</script>
-<script src="https://plugin.handtalk.me/web/latest/handtalk.min.js" charset="UTF-8"></script>

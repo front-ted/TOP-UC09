@@ -32,7 +32,7 @@ li {
     padding-top: 10px;
 }
 
-.modal-body {
+.modal-principal {
     background: url('../images/06/bg02.png');
     background-size: cover;
     background-attachment: fixed;
@@ -96,7 +96,83 @@ h4 {
     font-size: 12px;
 }
 
+/* infografico */
+.popover-content {
+    color: #fff;
+    background-color: #174351;
+    border: 1px solid #fed06e;
+    border-radius: 5px;
+}
 
+.popover {
+    max-width: 300px;
+}
+
+.popover .arrow {
+    display: none !important;
+}
+
+.painel-higienizacao {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.bt-higienizacao {
+    margin: 20px;
+    border: none;
+}
+
+.bt-higienizacao1 {
+    background: url('../images/06/p_bt01.png');
+    height: 177px;
+    width: 177px;
+}
+
+.bt-higienizacao2 {
+    background: url('../images/06/p_bt02.png');
+    height: 176px;
+    width: 176px;
+}
+
+.bt-higienizacao3 {
+    background: url('../images/06/p_bt03.png');
+    height: 176px;
+    width: 176px;
+}
+
+.bt-higienizacao4 {
+    background: url('../images/06/p_bt04.png');
+    height: 176px;
+    width: 176px;
+}
+
+.bt-higienizacao1:hover {
+    background: url('../images/06/p_bt01b.png');
+}
+
+.bt-higienizacao2:hover {
+    background: url('../images/06/p_bt02b.png');
+    height: 172px;
+    width: 172px;
+}
+
+.bt-higienizacao3:hover {
+    background: url('../images/06/p_bt03b.png');
+    height: 172px;
+    width: 172px;
+}
+
+.bt-higienizacao4:hover {
+    background: url('../images/06/p_bt04b.png');
+    height: 172px;
+    width: 172px;
+}
+
+/* fim infografico */
 
 
 

@@ -1,19 +1,19 @@
 Página 1
 fazer linha do tempo
 Página 2
-arredondar tabela e testar
+arrumar painel clicavel de curvas, tabelas, painel gaitinha, 
 arrumar painel clicavel, colocar as setas e testar responsividade
 arredondar painel gaitinha e arrumar o layout dele
 Página 3
-a principio não precisa fazer nada, mas igual testar
+a principio não precisa fazer nada
 Página 4
-arrumar bg 
+arrumar bg, menu hamburguer, painel de abas, largura das etapas, painel gaitinha
 Página 5
-não achei a imagem que corresponde a figura8, pedir para criar um visual para o jogo
+arrumar figura8, pedir design do jogo
 Página 6
-arrumar layout
+arrumar layout, painel gaitinha colocar imagens, painel higienização, inserir jogo, perguntar para ju se pode ser drag and drop e pedir design botões das modais para mobile
 Página 7
-arrumar layout
+pedir para design fazer layout
 
 
 
@@ -30,10 +30,171 @@ arrumar layout
 
 
 
-<figure>
-          <img src="../conteudo/images/01/" class="center-block img-responsive print borda"
-            alt="">
-          <figcaption> <br>
-           
-          </figcaption>
-        </figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <img src="../conteudo/images/selo-presencialidade.png"
+                    class="center-block img-responsive no-print borda" alt="" style="width: 100px;">
+                  <div id="content-game">
+                    <div class="container-fluid game-body no-print" style="padding:0;">
+                      <div class="row">
+                        <div class="col-10 align-self-start d-block m-auto">
+                          <div class="row game-descricao-img"><img src="./images/05/pg2-praticar2-ico.png"
+                              style="width: 150px;" alt=""></div>
+                          <div class="row game-descricao">
+                            <p>Classificação dos riscos associados à biossegurança</p>
+                          </div>
+                        </div>
+                        <div id="slots" class="col-12 mt-5 mb-5">
+                          <div class="row">
+                            <div class="col-12 col-md-4 mt-3 mb-3">
+                              <div class="game-titulo">
+                                <p>Riscos de acidentes</p>
+                              </div>
+                              <div id="slot-1" class="slot">
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-4 mt-3 mb-3">
+                              <div class="game-titulo">
+                                <p>Riscos ergonômicos</p>
+                              </div>
+                              <div id="slot-2" class="slot">
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-4 mt-3 mb-3">
+                              <div class="game-titulo">
+                                <p>Riscos físicos</p>
+                              </div>
+                              <div id="slot-3" class="slot">
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-4 mt-3 mb-3">
+                              <div class="game-titulo">
+                                <p>Riscos químicos</p>
+                              </div>
+                              <div id="slot-4" class="slot">
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-4 mt-3 mb-3">
+                              <div class="game-titulo">
+                                <p>Riscos biológicos</p>
+                              </div>
+                              <div id="slot-5" class="slot">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="cardPile" class="game-itens-container">
+                          <div id="card-1" class="card" data-target="slot-1">
+                            Relacionados a situações de perigo que possam afetar a integridade, o bem-estar físico e
+                            moral dos indivíduos nos laboratórios.
+                          </div>
+                          <div id="card-2" class="card" data-target="slot-2">
+                            Relacionados com qualquer ocorrência que venha a interferir nas características
+                            psicofisiológicas do indivíduo, podendo gerar desconforto ou afetando sua saúde. Como por
+                            exemplo o caso das lesões causadas pelo esforço repetitivo (LER).
+                          </div>
+                          <div id="card-3" class="card" data-target="slot-3">
+                            São os ruídos, vibrações, temperaturas extremas, radiações ionizantes e não ionizantes,
+                            ultrassom, materiais cortantes e pontiagudos. Correspondentes às diversas formas de energia
+                            que os indivíduos estão expostos
+                          </div>
+                          <div id="card-4" class="card" data-target="slot-4">
+                            Associados a todas as substâncias, compostos ou produtos nas formas de gases, vapores,
+                            poeiras, fumaças, fumos, névoas ou neblinas, que possam penetrar no organismo pela via
+                            respiratória ou pelo contato por meio da pele ou ingestão.
+                          </div>
+                          <div id="card-5" class="card" data-target="slot-4">
+                            Abrangem a manipulação dos agentes e materiais biológicos.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal fade" id="bgmodal-acerto" tabindex="-1" role="dialog"
+                    aria-labelledby="bgmodal-passou" aria-hidden="true" aria-live="polite" aria-atomic="true">
+                    <div class="modal-dialog modal-dialog-centered" role="dialog">
+                      <div class="modal-content no-print">
+                        <div class="modal-header">
+                          <button type="button" id="bgmodal-passou" class="close" data-dismiss="modal"
+                            aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            <div class="col-12 col-lg-4">
+                            </div>
+                            <div class="col-12 col-lg-8">
+                              <p>Parabéns, resposta
+                                correta!
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal fade" id="bgmodal-erro" tabindex="-1" aria-labelledby="bgmodal-passou"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content no-print">
+                        <div class="modal-header">
+                          <button type="button" id="bgmodal-passou" class="close" data-dismiss="modal"
+                            aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            <div class="col-12 col-lg-4">
+                            </div>
+                            <div class="col-12 col-lg-8">
+                              <p>Resposta
+                                incorreta!
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
