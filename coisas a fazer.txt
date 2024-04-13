@@ -7,7 +7,7 @@ arredondar painel gaitinha e arrumar o layout dele
 Página 3
 a principio não precisa fazer nada
 Página 4
-arrumar bg, menu hamburguer, painel de abas, largura das etapas, painel gaitinha
+arrumar bg, painel de abas, largura das etapas
 Página 5
 arrumar figura8, pedir design do jogo
 Página 6
