@@ -1,3 +1,165 @@
+.timeline {
+    list-style: none;
+    padding: 20px 0;
+    position: relative;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: #0b3b4b;
+    margin-left: -1px;
+}
+
+.timeline-item {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 50px;
+    clear: both;
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    left: -9px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.timeline-item .timeline-content {
+    position: relative;
+    width: 50%;
+    float: left;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    float: right;
+}
+
+.timeline-item .timeline-content .btn {
+    width: 100%;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    outline: none !important;
+}
+
+.timeline-item .timeline-content .btn img {
+    width: 406px;
+    height: 355px;
+    display: block;
+    border-radius: 5px;
+}
+
+@media (max-width: 767.98px) {
+    .timeline-item .timeline-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .timeline-item .timeline-content .btn img {
+        width: 100%;
+        height: auto;
+    }
+
+    .description {
+        position: relative;
+        max-width: none;
+        width: 100%;
+        top: auto;
+        transform: none;
+        left: auto;
+        right: auto;
+        display: none;
+    }
+
+    .timeline-item.active .description {
+        display: block;
+    }
+}
+
+.timeline-item .timeline-content .btn:hover {
+    transform: scale(1.1);
+}
+
+.timeline-item .timeline-content .btn:focus {
+    box-shadow: none !important;
+}
+
+.description {
+    display: none;
+    position: absolute;
+    background-color: #0b3b4b;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 999;
+    max-width: calc(100vw - 426px);
+    top: 50%;
+    transform: translateY(-50%);
+    left: auto;
+    right: calc(100% + 10px);
+    transition: right 0.3s ease;
+}
+
+.description.active {
+    display: block;
+    right: auto;
+    left: calc(100% + 10px);
+    width: 100%;
+}
+
+.timeline-item:nth-child(even) .description.active {
+    left: auto;
+    right: calc(100% + 10px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h2 {
+    color: #fff;
+}
+
+li {
+    margin-bottom: 0.8em;
+    list-style-image: none;
+}
+
 figcaption {
     text-align: center;
     margin-top: 10px;
