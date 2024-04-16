@@ -11,7 +11,7 @@ arrumar bg, painel de abas, largura das etapas
 Página 5
 arrumar figura8, pedir design do jogo
 Página 6
-arrumar layout, painel gaitinha colocar imagens, painel higienização, inserir jogo, perguntar para ju se pode ser drag and drop e pedir design botões das modais para mobile
+arrumar bg, painel higienização, arrumar jogo, pedir design botões das modais para mobile
 Página 7
 pedir para design fazer layout
 

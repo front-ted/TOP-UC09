@@ -1,4 +1,4 @@
-.gaitinha{
+.gaitinha {
     margin-top: 20px;
 }
 
@@ -9,28 +9,42 @@
     box-shadow: none;
 }
 
-.gaitinha .panel-default>.panel-heading{
+.gaitinha .panel-default>.panel-heading {
     background-color: transparent !important;
 }
-.gaitinha .panel.panel-default .panel-heading{
-    padding:0;
-}
-.gaitinha .panel.panel-default .panel-heading .panel-title a.collapsed{
-    background: #50D7E2 !important;
-    color: white !important;   
+
+.gaitinha .panel.panel-default .panel-heading {
+    padding: 0;
 }
 
-.gaitinha .panel.panel-default .panel-heading .panel-title a{
-    border: 2px solid #50D7E2 !important;
-    color: #50D7E2 !important;
-    border-radius: 10px;
-    padding: 1.2rem;           
+.gaitinha .panel.panel-default .panel-heading .panel-title a.collapsed {
+    background: #2cacac !important;
+    color: white !important;
+}
+
+.gaitinha .panel.panel-default .panel-heading .panel-title a {
+    border: 2px solid #2cacac !important;
+    color: #2cacac !important;
+    border-radius: 20px;
+    padding: 1.2rem;
 }
 
 
-.gaitinha .panel.panel-default .panel-body{
+.gaitinha .panel.panel-default .panel-body {
     border: 0;
-    border-left: 2px solid #50D7E2 !important;
+    border-left: 2px solid #2cacac !important;
     margin-left: 20px;
     margin-top: 3px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
 }
