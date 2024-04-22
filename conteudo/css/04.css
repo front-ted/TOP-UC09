@@ -5,6 +5,35 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
+
+table.senac th {
+    background-color: #114454;
+    color: #45c0cd;
+    border: solid 1px #114454 !important;
+}
+
+table.senac td {
+    text-align: center;
+    background-color: #bbc3c3;
+    color: #000;
+    font-weight: bold;
+    border: solid 1px #114454 !important;
+}
+
+table.senac {
+    margin: 0 auto 2em;
+    width: 38%;
+    border: solid 1px #114454 !important;
+    border-radius: 30px;
+    height: 250px;
+    overflow: hidden;
+}
+
+
+ol {
+    list-style-type: none;
+}
+
 /*---------- MENU ----------*/
 .eng-item-menu {
     opacity: 1;
@@ -175,6 +204,33 @@ body {
     border: 1px solid #DFDFDF
 }
 
+.voltar {
+    width: 174px;
+    height: 39px;
+    padding: 10px;
+    border-radius: 4px;
+    gap: 10px;
+    font-weight: bold;
+    color: #000 !important;
+    background: #F5CA2E;
+    border: 1px solid #F5CA2E;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.btn-final {
+    text-align: center;
+}
+
+.moldura img {
+    filter: drop-shadow(#333 1px 3px 3px);
+}
+
+.moldura figcaption,
+.legenda {
+    font-size: 12px;
+}
 
 /*---------- painel exemplos modais normais----------*/
 .painel-exemplos {
@@ -256,6 +312,7 @@ h4 {
 li {
     margin-bottom: 0.8em;
     list-style-image: none;
+    font-weight: bold;
 }
 
 .caixa-destaque,
@@ -268,47 +325,17 @@ li {
     width: 100%;
 }
 
+.etapa {
+    width: 100%;
+}
 
 .caixa-exemplos {
     background-color: #1e86ab;
     color: #fff;
 }
 
-/* 
-.nav-tabs li.active a,
-.nav-tabs li.active a:hover,
- .nav-tabs li.active a:focus {
-    background-color: #28adb0;
-    color: #ffffff;
-}
 
-.nav-tabs li a,
-.nav-tabs li a:hover,
-.nav-tabs li a:focus {
-    background-color: #28adb0;
-    color: #ffffff;
-}
-
-.tab-content {
-    background-color: #28adb0;
-    color: #ffffff;
-    border-radius: 20px;
-    padding: 20px;
-}
-.nav-tabs{
-    background-color: #28adb0;
-    color: #ffffff;
-    border-radius: 20px;
-    padding: 20px;
-    margin-left: 0px;
-} */
-
-
-
-
-
-
-
+/*painel de abas*/
 .nav-tabs li.active a,
 .nav-tabs li.active a:hover,
 .nav-tabs li.active a:focus {
@@ -316,13 +343,20 @@ li {
     color: #ffffff;
 }
 
-.nav-tabs li a,
+.nav-tabs li a {
+    background-color: #28adb0 !important;
+    color: #ffffff !important;
+    margin-right: 0;
+
+}
+
 .nav-tabs li a:hover,
 .nav-tabs li a:focus {
-    background-color: #28adb0;
-    color: #ffffff;
+    color: #28adb0 !important;
+    background-color: #ffffff !important;
     margin-right: 0;
 }
+
 
 .tab-content,
 .tab-pane {
@@ -358,12 +392,13 @@ li {
     border-radius: 0 0 20px 20px;
     overflow: hidden;
 }
-a, .panel-title {
+
+a,
+.panel-title {
     color: #ffffff !important;
 }
 
-
-
+/*fim painel de abas*/
 
 
 
@@ -375,5 +410,14 @@ a, .panel-title {
         justify-content: center;
         align-content: center;
         flex-direction: column;
+    }
+
+    table.senac {
+        margin: 0 auto 2em;
+        width: 100%;
+        border: solid 1px #114454 !important;
+        border-radius: 30px;
+        height: unset;
+        overflow: hidden;
     }
 }

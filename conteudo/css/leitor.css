@@ -15,6 +15,9 @@ li:first-line {
 #booklet .paginas .pagina {
   display: block !important;
 }
+ol {
+  list-style-type: none;
+}
 
 body {
   background-color: #f2f2f2

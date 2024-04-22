@@ -1,7 +1,7 @@
 /* Interativo drag n drop */
 
 .game-body {
-    background-color: #ff9200;
+    background-color: #50D7E2;
     border: 5px solid #fff;
     border-radius: 20px;
     /* margin: 100px 0px 30px; */
@@ -29,7 +29,7 @@
 }
 
 .card p {
-    color: black !important;
+    color: #fff !important;
 }
 
 
@@ -50,7 +50,7 @@
     padding: 25px 0;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: #ffbc62;
+    background-color: #96e7ed;
     max-width: calc(100% - 24px);
     margin-left: auto !important;
     margin-right: auto !important;
@@ -101,7 +101,7 @@
     background-color: white;
     padding: 10px;
     text-align: center;
-    color: #018085;
+    color: #333;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     font-weight: bold;

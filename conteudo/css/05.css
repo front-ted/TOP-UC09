@@ -58,15 +58,43 @@ h4 {
     max-width: 100%;
     width: 750px;
     height: 451px;
-    position: relative;
-    top: -200px;
+    top: 835px;
+    left: 345px;
     border-radius: 8px;
+    border: 1px;
     margin: auto;
     background: linear-gradient(0deg, #DFDFDF, #DFDFDF),
         linear-gradient(0deg, #E4E4E4, #E4E4E4);
     border: 1px solid #DFDFDF
 }
 
+.voltar {
+    width: 174px;
+    height: 39px;
+    padding: 10px;
+    border-radius: 4px;
+    gap: 10px;
+    font-weight: bold;
+    color: #000 !important;
+    background: #F5CA2E;
+    border: 1px solid #F5CA2E;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.btn-final {
+    text-align: center;
+}
+
+.moldura img {
+    filter: drop-shadow(#333 1px 3px 3px);
+}
+
+.moldura figcaption,
+.legenda {
+    font-size: 12px;
+}
 
 .fundo-tecnicos {
     padding: 30px 0 0 0;
@@ -165,6 +193,14 @@ li {
     flex-wrap: wrap;
 }
 
+.painel-tecnicas2 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .bt-tecnicas {
     height: 104px;
     width: 280px;
@@ -249,6 +285,22 @@ li {
     flex-wrap: wrap;
 }
 
+.painel-tipos2 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.painel-tipos3 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .bt-tipos {
     height: 104px;
     width: 280px;
@@ -308,7 +360,34 @@ li {
         flex-wrap: wrap;
     }
 
+    .painel-tecnicas2 {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
     .painel-tipos {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .painel-tipos2 {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .painel-tipos3 {
         display: flex;
         align-content: center;
         justify-content: center;

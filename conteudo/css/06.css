@@ -236,8 +236,6 @@ h4 {
 
 
 
-
-
 @media only screen and (max-width: 768px) {
     .painel-descarte {
         display: flex;
@@ -245,5 +243,44 @@ h4 {
         align-content: center;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .bt-descarte1 {
+        background: url('../images/06/bt01.png');
+        scale: 0.5;
+
+    }
+
+    .bt-descarte2 {
+        background: url('../images/06/bt02.png');
+        scale: 0.5;
+
+    }
+
+    .bt-descarte3 {
+        background: url('../images/06/bt03.png');
+        scale: 0.5;
+
+    }
+
+    .bt-descarte {
+        margin: -10px;
+    }
+
+    .bt-descarte1:hover {
+        background: url('../images/06/bt01b.png');
+        scale: 0.5;
+    }
+
+    .bt-descarte2:hover {
+        background: url('../images/06/bt02b.png');
+        scale: 0.5;
+    }
+
+    .bt-descarte3:hover {
+        background: url('../images/06/bt03b.png');
+        scale: 0.5;
     }
 }
