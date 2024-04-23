@@ -119,39 +119,52 @@ h4 {
     display: none !important;
 }
 
+.espaco {
+    padding-top: 220px;
+}
+
 .painel-higienizacao {
-    position: relative;
     display: flex;
-    background: url('../images/06/');
+
 }
 
 .bt-higienizacao {
     margin: 20px;
     border: none;
+    z-index: 10;
+    position: relative;
 }
 
 .bt-higienizacao1 {
     background: url('../images/06/p_bt01.png');
     height: 177px;
     width: 177px;
+    right: -362px;
+    top: 24px;
 }
 
 .bt-higienizacao2 {
     background: url('../images/06/p_bt02.png');
     height: 176px;
     width: 176px;
+    right: -412px;
+    top: 200px;
 }
 
 .bt-higienizacao3 {
     background: url('../images/06/p_bt03.png');
     height: 176px;
     width: 176px;
+    bottom: -369px;
+    right: 66px;
 }
 
 .bt-higienizacao4 {
     background: url('../images/06/p_bt04.png');
     height: 176px;
     width: 176px;
+    left: -545px;
+    top: 200px;
 }
 
 .bt-higienizacao1:hover {
@@ -244,6 +257,62 @@ h4 {
         justify-content: center;
         align-items: center;
     }
+
+    .espaco {
+        padding-top: unset;
+    }
+
+    .bt-higienizacao1 {
+        right: unset;
+        top: unset;
+    }
+
+    .bt-higienizacao2 {
+        right: unset;
+        top: unset;
+    }
+
+    .bt-higienizacao3 {
+        bottom: unset;
+        right: unset;
+    }
+
+    .bt-higienizacao4 {
+        left: unset;
+        top: unset;
+    }
+
+    .painel-higienizacao {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 @media only screen and (max-width: 425px) {

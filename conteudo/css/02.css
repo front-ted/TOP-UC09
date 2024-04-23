@@ -9,6 +9,29 @@ figure {
     margin-bottom: 30px;
 }
 
+table.senac th {
+    background-color: #114454;
+    color: #45c0cd;
+    border: solid 1px #114454 !important;
+}
+
+table.senac td {
+    text-align: center;
+    background-color: #bbc3c3;
+    color: #000;
+    font-weight: bold;
+    border: solid 1px #114454 !important;
+}
+
+table.senac {
+    margin: 0 auto 2em;
+    width: 38%;
+    border: solid 1px #114454 !important;
+    border-radius: 30px;
+    height: 250px;
+    overflow: hidden;
+}
+
 .titulo-b1 {
     color: #50D7E2;
     font-weight: bold;
@@ -132,39 +155,15 @@ li {
     filter: drop-shadow(#333 1px 3px 3px);
 }
 
+.caixa-destaque {
+    width: 100%;
+}
+
 .moldura figcaption,
 .legenda {
     font-size: 12px;
 }
 
-table.senac th {
-    background-color: #114454;
-    color: #45c0cd;
-    border: solid 1px #114454;
-}
-
-table.senac td {
-    text-align: center;
-    background-color: #bbc3c3;
-    color: #000;
-    font-weight: bold;
-    border-color: #114454;
-}
-
-table.senac {
-    margin: 0 1.5em 2em;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    border: 6px solid;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    border: solid 1px #114454;
-}
-
-.tabela {
-    border-radius: 30px;
-}
 
 /* painel clicavel estilo popover*/
 .popover-content {
@@ -206,22 +205,23 @@ table.senac {
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-}
-
-.btn-curva1 {
-    top: 300px;
-}
-
-.btn-curva2 {
-    top: 250px;
+    margin-top: -230px;
 }
 
 .btn-curva3 {
-    top: 200px;
+    top: 268px;
+}
+
+.btn-curva2 {
+    top: 294px;
+}
+
+.btn-curva1 {
+    top: 318px;
 }
 
 /* fim painel clicavel estilo popover*/
-/* painel gaitinha*/
+/* painel gaitinha
 .panel-heading {
     color: #0b3b4b !important;
     background-color: #fed06e !important;
@@ -233,7 +233,6 @@ table.senac {
     box-shadow: none !important;
     border: none !important;
     border-bottom: none !important;
-    /* Remove a borda inferior */
 }
 
 .panel-heading a {
@@ -262,8 +261,7 @@ table.senac {
     box-shadow: none;
     border: none;
 }
-
-/* fim painel gaitinha*/
+ fim painel gaitinha*/
 .btn-final {
     text-align: center;
 }
@@ -299,4 +297,9 @@ table.senac {
     .btn-curva3 {
         top: unset;
     }
+
+    .painel-curvas {
+        margin-top: unset;
+    }
+
 }

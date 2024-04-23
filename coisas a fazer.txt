@@ -2,9 +2,7 @@ Página 1
 fazer linha do tempo
 
 Página 2
-arrumar painel clicavel de curvas, tabelas, painel gaitinha, 
-arrumar painel clicavel, colocar as setas e testar responsividade
-arredondar painel gaitinha e arrumar o layout dele
+layout OK, mobile OK, impressão OK.
 
 Página 3
 layout OK, impressão OK, mobile OK.
@@ -13,10 +11,14 @@ Página 4
 painel de abas, layout OK, impressão OK, mobile OK.
 
 Página 5
-Pedir design do jogo, mobile OK, layout OK, impressão OK.
+mobile OK, layout OK, impressão OK.
 
 Página 6
-arrumar bg, painel higienização, arrumar jogo
+arrumar jogo, arrumar painel gaitinha, impressão OK, mobile OK, layout OK. 
 
-Página 7
-Pedir design layout, mobile OK, layout OK, impressão OK.
+Página 7s
+Mobile OK, layout OK, impressão OK.
+
+
+OBS:borda exterior das tabelas
+ainda tenho que dar uma atenção 1, 4 e 6.

@@ -1,7 +1,16 @@
+html,
+body {
+    background: url('../images/07/img.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
 p {
-    page-break-after:always;
+    page-break-after: always;
     word-break: break-word;
 }
+
 .espera {
     max-width: 100%;
     width: 750px;
@@ -43,4 +52,5 @@ p {
 .legenda {
     font-size: 12px;
 }
+
 @media (max-width: 768px) {}
