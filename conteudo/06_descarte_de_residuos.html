@@ -345,8 +345,8 @@
                       <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingOne">
                           <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
-                              aria-expanded="true" aria-controls="collapseOne">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                              href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                               <img src="../conteudo/images/06/ico01.png" style="padding-right: 5px;">
                               Riscos de acidentes
                             </a>
@@ -425,8 +425,8 @@
                       <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingFour">
                           <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour"
-                              aria-expanded="true" aria-controls="collapseFour">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                              href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                               <img src="../conteudo/images/06/ico07.png" style="padding-right: 5px;">
                               Riscos químicos
                             </a>
@@ -449,8 +449,8 @@
                       <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingFive">
                           <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive"
-                              aria-expanded="true" aria-controls="collapseFive">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                              href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                               <img src="../conteudo/images/06/ico08.png" style="padding-right: 5px;">
                               Riscos biológicos
                             </a>
@@ -544,62 +544,22 @@
                             poeiras, fumaças, fumos, névoas ou neblinas, que possam penetrar no organismo pela via
                             respiratória ou pelo contato por meio da pele ou ingestão.
                           </div>
-                          <div id="card-5" class="card" data-target="slot-4">
+                          <div id="card-5" class="card" data-target="slot-5">
                             Abrangem a manipulação dos agentes e materiais biológicos.
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="modal fade" id="bgmodal-acerto" tabindex="-1" role="dialog"
-                    aria-labelledby="bgmodal-passou" aria-hidden="true" aria-live="polite" aria-atomic="true">
-                    <div class="modal-dialog modal-dialog-centered" role="dialog">
-                      <div class="modal-content no-print">
-                        <div class="modal-header">
-                          <button type="button" id="bgmodal-passou" class="close" data-dismiss="modal"
-                            aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        </div>
-                        <div class="modal-body">
-                          <div class="row">
-                            <div class="col-12 col-lg-4">
-                            </div>
-                            <div class="col-12 col-lg-8">
-                              <p>Parabéns, resposta
-                                correta!
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                        </div>
-                      </div>
-                    </div>
+                  <div id="feedback-acerto" class="text-center">
+                    <p>Parabéns, resposta
+                      correta!
+                    </p>
                   </div>
-                  <div class="modal fade" id="bgmodal-erro" tabindex="-1" aria-labelledby="bgmodal-passou"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                      <div class="modal-content no-print">
-                        <div class="modal-header">
-                          <button type="button" id="bgmodal-passou" class="close" data-dismiss="modal"
-                            aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        </div>
-                        <div class="modal-body">
-                          <div class="row">
-                            <div class="col-12 col-lg-4">
-                            </div>
-                            <div class="col-12 col-lg-8">
-                              <p>Resposta
-                                incorreta!
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                        </div>
-                      </div>
-                    </div>
+                  <div id="feedback-erro" class="text-center">
+                    <p>Resposta
+                      incorreta!
+                    </p>
                   </div>
                   <h4>Medidas de controle de contaminação no local de trabalho </h4>
                   <p>Em laboratório, as boas práticas de controle de contaminação são fundamentais e referem-se às
@@ -1489,6 +1449,11 @@
     window.addEventListener('load', function () {
       AOS.init()
     })
+
+
+
+
+
   </script>
   <!-- Versao atual do handtalk -->
   <script>

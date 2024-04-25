@@ -347,6 +347,7 @@ li {
     background-color: #28adb0 !important;
     color: #ffffff !important;
     margin-right: 0;
+    padding-top: 16px;
 }
 
 .nav-tabs li a:hover,
@@ -354,6 +355,7 @@ li {
     color: #28adb0 !important;
     background-color: #ffffff !important;
     margin-right: 0;
+
 }
 
 
@@ -396,6 +398,58 @@ a,
 .panel-title {
     color: #ffffff !important;
 }
+
+
+
+
+
+
+
+/* Estilos para as abas */
+.nav-tabs {
+    margin: 0;
+    padding: 0;
+    border-radius: 20px 20px 0 0;
+    /* Arredonda apenas os lados esquerdo e direito */
+    overflow: hidden;
+    /* Garante que o conteúdo arredondado não ultrapasse */
+    background-color: #28adb0;
+    /* Cor de fundo das abas */
+    border-bottom: none;
+    /* Remove a borda inferior */
+}
+
+.nav-tabs li {
+    flex: 1;
+    color: white !important;
+    margin-right: 0;
+}
+
+/* Estilos para o conteúdo das abas */
+.tab-content {
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+    /* Arredonda apenas a parte inferior do conteúdo */
+    background-color: #28adb0;
+    /* Cor de fundo do conteúdo */
+    color: white;
+    /* Cor do texto no conteúdo */
+}
+
+.tab-pane {
+    background-color: transparent;
+    /* Garante que o fundo do conteúdo seja transparente */
+    border: none;
+    /* Remove a borda */
+}
+
+
+
+
+
+
+
+
 
 /*fim painel de abas*/
 

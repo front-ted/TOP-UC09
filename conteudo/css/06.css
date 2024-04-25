@@ -235,19 +235,31 @@ h4 {
 
 /* fim painel descarte */
 
+#feedback-acerto {
+    display: none;
+    background-color: #28a1a4;
+    color: #fff;
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 0.9em;
+    margin-bottom: 0.9em;
+    border-radius: 1em;
+    font-size: 1.2em;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+#feedback-erro {
+    display: none;
+    background-color: #28a1a4;
+    color: #fff;
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 0.9em;
+    margin-bottom: 0.9em;
+    border-radius: 1em;
+    font-size: 1.2em;
+}
 
 @media only screen and (max-width: 768px) {
     .painel-descarte {

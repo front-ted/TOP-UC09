@@ -1,5 +1,5 @@
 Página 1
-fazer linha do tempo
+layout OK, mobile OK, impressão OK.
 
 Página 2
 layout OK, mobile OK, impressão OK.
@@ -8,17 +8,16 @@ Página 3
 layout OK, impressão OK, mobile OK.
 
 Página 4
-painel de abas, layout OK, impressão OK, mobile OK.
+Layout OK, impressão OK, mobile OK.
 
 Página 5
-mobile OK, layout OK, impressão OK.
+Mobile OK, layout OK, impressão OK.
 
 Página 6
-arrumar jogo, arrumar painel gaitinha, impressão OK, mobile OK, layout OK. 
+Impressão OK, mobile OK, layout OK. 
 
 Página 7s
 Mobile OK, layout OK, impressão OK.
 
 
-OBS:borda exterior das tabelas
-ainda tenho que dar uma atenção 1, 4 e 6.
+OBS:borda exterior das tabelas 2, 4

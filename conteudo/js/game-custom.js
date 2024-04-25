@@ -72,6 +72,8 @@ dragula({
   scrollable = true;
 
   $('#bgmodal-acerto').modal('show')
+  $('#feedback-acerto').css('display','block');
+  $('#feedback-erro').css('display', 'none'); 
   audio.setAttribute('src', 'audios/acerto.mp3'); //change the source
   audio.load(); //load the new source
   audio.play(); //play
@@ -82,6 +84,8 @@ dragula({
   // Executa o áudio e a modal necessária
   // Também é possível fazer algum teste aqui caso necessário.
   $('#bgmodal-erro').modal('show')
+  $('#feedback-erro').css('display','block');
+  $('#feedback-acerto').css('display', 'none'); 
   audio.setAttribute('src', 'audios/erro.mp3'); //change the source
   audio.load(); //load the new source
   audio.play(); //play
