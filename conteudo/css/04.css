@@ -336,13 +336,6 @@ li {
 
 
 /*painel de abas*/
-.nav-tabs li.active a,
-.nav-tabs li.active a:hover,
-.nav-tabs li.active a:focus {
-    background-color: #28adb0;
-    color: #ffffff;
-}
-
 .nav-tabs li a {
     background-color: #28adb0 !important;
     color: #ffffff !important;
@@ -350,6 +343,7 @@ li {
     padding-top: 16px;
 }
 
+.nav-tabs li.active a,
 .nav-tabs li a:hover,
 .nav-tabs li a:focus {
     color: #28adb0 !important;
@@ -357,7 +351,6 @@ li {
     margin-right: 0;
 
 }
-
 
 .tab-content,
 .tab-pane {
@@ -399,24 +392,13 @@ a,
     color: #ffffff !important;
 }
 
-
-
-
-
-
-
-/* Estilos para as abas */
 .nav-tabs {
     margin: 0;
     padding: 0;
     border-radius: 20px 20px 0 0;
-    /* Arredonda apenas os lados esquerdo e direito */
     overflow: hidden;
-    /* Garante que o conteúdo arredondado não ultrapasse */
     background-color: #28adb0;
-    /* Cor de fundo das abas */
     border-bottom: none;
-    /* Remove a borda inferior */
 }
 
 .nav-tabs li {
@@ -425,36 +407,19 @@ a,
     margin-right: 0;
 }
 
-/* Estilos para o conteúdo das abas */
 .tab-content {
     padding: 20px;
     border-radius: 0 0 20px 20px;
-    /* Arredonda apenas a parte inferior do conteúdo */
     background-color: #28adb0;
-    /* Cor de fundo do conteúdo */
     color: white;
-    /* Cor do texto no conteúdo */
 }
 
 .tab-pane {
     background-color: transparent;
-    /* Garante que o fundo do conteúdo seja transparente */
     border: none;
-    /* Remove a borda */
 }
 
-
-
-
-
-
-
-
-
 /*fim painel de abas*/
-
-
-
 
 @media (max-width: 768px) {
     .painel-exemplos {

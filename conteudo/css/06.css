@@ -207,6 +207,7 @@ h4 {
     border: none;
     height: 144px;
     width: 592px;
+    background-attachment: fixed;
 }
 
 .bt-descarte1 {
