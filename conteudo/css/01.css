@@ -254,6 +254,10 @@ figure {
     display: block;
 }
 
+.linhatempo-item:last-child .linhatempo-conteudo .btn:hover{
+    transform: scale(1.1) translateX(-50%);
+}
+
 #descricao10.descricao {
     left: 89%;
     transform: translateX(-50%);
@@ -266,6 +270,10 @@ figure {
 .linhatempo-item .descricao.active {
     margin-left: -42px;
 }
+
+
+
+
 
 @media (max-width: 1024px) {
     #descricao10.descricao {

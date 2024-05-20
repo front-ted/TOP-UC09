@@ -5,3 +5,8 @@
 	background-image:url(../images/anotar.png);
 	background-repeat:no-repeat;
 }
+
+.titulo-escuro {
+	color: #0b3b4b;
+	font-weight: bolder;
+}
