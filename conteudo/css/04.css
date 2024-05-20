@@ -419,6 +419,16 @@ a,
     border: none;
 }
 
+
+
+.gifs{
+    max-width: 800px;
+    border: 1px solid green;
+}
+
+.gifs > img {
+    max-width: 100%;
+}
 /*fim painel de abas*/
 
 @media (max-width: 768px) {

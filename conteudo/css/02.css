@@ -200,25 +200,38 @@ li {
 
 .painel-curvas {
     display: flex;
+    position: relative;
     flex-direction: column;
     align-content: center;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    margin-top: -230px;
-}
-
-.btn-curva3 {
-    top: 268px;
-}
-
-.btn-curva2 {
-    top: 294px;
+    /* margin-top: -230px; */
+    border: 2px solid red;
+    background: url('../images/02/painel/painel.png');
+    background-size: 100% 100%;    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 255px;
+    
 }
 
 .btn-curva1 {
-    top: 318px;
+    position: absolute;
+    top: 20%;
 }
+
+
+.btn-curva2 {
+    position: absolute;
+
+    top: 45%;
+}
+
+.btn-curva3 {
+    position: absolute;
+    top: 75%;
+}
+
 
 /* fim painel clicavel estilo popover*/
 /* painel gaitinha
@@ -285,7 +298,13 @@ li {
     margin-bottom: 50px;
 }
 
-@media (max-width: 768px) {
+
+
+
+
+
+
+/* @media (max-width: 768px) {
     .btn-curva1 {
         top: unset;
     }
@@ -302,4 +321,4 @@ li {
         margin-top: unset;
     }
 
-}
+} */
